@@ -8,7 +8,7 @@ def cookies_builder():
             if key == "url" :
                 url = value
             else:
-                account = value[0]
+                account = value
         print url
         print account
         return url,account
@@ -33,7 +33,7 @@ class Config(object):
             inf = yaml.load(f)
             for key, value in inf.items():
                 if key == "account" :
-                    account = value[0]
+                    account = value
             return account
 
 if __name__ == "__main__":
