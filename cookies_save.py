@@ -65,7 +65,7 @@ class AccountCookiesManager(object):
             value = cookie.get('value')
             data[name] = value
         url = url.split('//')[1].split('/')[0]
-        with open('./cookies/{}_{}.json'.format(account,url),'w') as f:
+        with open('./cookies/{}&{}.json'.format(account,url),'w') as f:
             f.write(json.dumps(data))
 
 if __name__ ==  '__main__':

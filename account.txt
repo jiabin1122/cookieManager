@@ -1,3 +1,0 @@
-url1:https://xdata.jcloud.com/
-url2:https://console.jcloud.com/
-user1:username,password
